@@ -60,6 +60,21 @@
   ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);
     border-radius:8px;padding:10px 13px;font-size:14px}
 
+  .oppnote{color:var(--mut);font-size:13.5px;margin-top:12px}
+  .proof{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:760px){.proof{grid-template-columns:1fr}}
+  .pcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .pcard img{width:100%;height:150px;object-fit:cover;display:block}
+  .pcard .pcap{padding:10px 13px;font-size:13.5px;font-weight:600}
+
+  .contrast{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center}
+  @media(max-width:640px){.contrast{grid-template-columns:1fr}}
+  .cbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;font-size:14px}
+  .cbox.now{border-left:3px solid var(--bad)}
+  .cbox.after{border-left:3px solid var(--good)}
+  .cbox .clab{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);margin-bottom:6px;font-weight:700}
+  .carrow{color:var(--mut);font-size:22px;text-align:center}
+
   .cta{text-align:center;padding:32px 0 44px}
   .cta h2{font-size:20px;font-weight:800;margin-bottom:6px}
   .cta p{color:var(--mut);font-size:14.5px}
@@ -109,6 +124,30 @@
     <div class="opp">
       <div class="num">~7 of 12 admin hours/week back</div>
       <p>The lever here isn't more leads, Kieron is already at capacity. It's the 12 hours a week of manual admin (chasing quotes, confirming callouts, chasing invoices) that a CRM automates. At his current pace, that's roughly a full working day back every week, not a guarantee, illustrative based on what CRM Core automates (auto-reply, follow-up sequencing, callout confirmation, invoice reminders).</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Real Work, No System Behind It</div>
+    <div class="proof">
+      <div class="pcard">
+        <img src="audit-img/project-nufc.jpg" alt="NUFC Fan Zone welding and fabrication project">
+        <div class="pcap">NUFC Fan Zone, Stack</div>
+      </div>
+      <div class="pcard">
+        <img src="audit-img/project-daycare.jpg" alt="My Little Kingdom Daycare Ashington fabrication project">
+        <div class="pcap">My Little Kingdom Daycare, Ashington</div>
+      </div>
+    </div>
+    <p class="oppnote">Real, named, visible projects, the kind of proof most one-man operations don't have. Right now none of it is backed by a system, every quote and follow-up still runs on memory.</p>
+  </section>
+
+  <section>
+    <div class="h">Right Now vs. With a CRM</div>
+    <div class="contrast">
+      <div class="cbox now"><div class="clab">Right now</div>Quote sent, then hope Kieron remembers to chase it between jobs.</div>
+      <div class="carrow">&rarr;</div>
+      <div class="cbox after"><div class="clab">With CRM Core</div>Auto-follow-up after 48 hours, no memory required, nothing slips.</div>
     </div>
   </section>
 
