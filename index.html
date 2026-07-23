@@ -75,6 +75,17 @@
   .cbox .clab{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);margin-bottom:6px;font-weight:700}
   .carrow{color:var(--mut);font-size:22px;text-align:center}
 
+  .phases{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:640px){.phases{grid-template-columns:1fr}}
+  .phase{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .phase.p2{border-color:#1f6f3a}
+  .plabel{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700;margin-bottom:8px}
+  .pnum{display:flex;align-items:baseline;gap:10px;margin-bottom:8px}
+  .pfrom{font-size:26px;font-weight:900;color:var(--gradD)}
+  .pto{font-size:26px;font-weight:900;color:var(--good)}
+  .parrow{color:var(--mut);font-size:18px}
+  .phase p{color:var(--mut);font-size:13.5px}
+
   .cta{text-align:center;padding:32px 0 44px}
   .cta h2{font-size:20px;font-weight:800;margin-bottom:6px}
   .cta p{color:var(--mut);font-size:14.5px}
@@ -122,8 +133,20 @@
   <section>
     <div class="h">The Real Opportunity</div>
     <div class="opp">
-      <div class="num">~7 of 12 admin hours/week back</div>
-      <p>The lever here isn't more leads, Kieron is already at capacity. It's the 12 hours a week of manual admin (chasing quotes, confirming callouts, chasing invoices) that a CRM automates. At his current pace, that's roughly a full working day back every week, not a guarantee, illustrative based on what CRM Core automates (auto-reply, follow-up sequencing, callout confirmation, invoice reminders).</p>
+      <div class="num">12 admin hours a week, brought down in two phases</div>
+      <p>The lever here isn't more leads, Kieron is already at capacity. It's the 12 hours a week of manual admin (chasing quotes, confirming callouts, chasing invoices) currently running entirely on memory. Rather than one big jump, this gets phased: get the bulk of it off his plate first, then close the rest out once the system's proven itself.</p>
+    </div>
+    <div class="phases" style="margin-top:16px">
+      <div class="phase">
+        <div class="plabel">Phase 1</div>
+        <div class="pnum"><span class="pfrom">12 hrs</span><span class="parrow">&rarr;</span><span class="pto">2 hrs</span></div>
+        <p>Quote follow-up, callout confirmation, and review requests automated. The bulk of the admin load gone almost immediately.</p>
+      </div>
+      <div class="phase p2">
+        <div class="plabel">Phase 2</div>
+        <div class="pnum"><span class="pfrom">2 hrs</span><span class="parrow">&rarr;</span><span class="pto">0 hrs</span></div>
+        <p>The remaining edge cases, invoicing, job scheduling, closed out once Phase 1 is proven and running smoothly.</p>
+      </div>
     </div>
   </section>
 
